@@ -1,10 +1,12 @@
 import Image from "next/image";
-import AlbumCard from "@/components/AlbumCard";
+import AlbumCard from "@/components/album-card";
+import TitleCard from "@/components/title-card";
+import ArtistCard from "@/components/artist-card";
 
 export default function Home() {
   return (
-    <main className="h-full w-full bg-black text-white">
-      <header className="p-6">
+    <main className="flex flex-col h-screen w-full bg-black text-white">
+      <header className="p-4 shrink-0">
       <a href="#" className="text-5xl font-mono font-bold bg-gradient-to-r
                      from-sky-300 via-indigo-300 to-rose-300
                      bg-clip-text text-transparent"
@@ -13,33 +15,52 @@ export default function Home() {
         </a>
       </header>
 
-      <div className="grid grid-cols-12 gap-4 px-2">
+      <div className="flex flex-1 gap-4 px-2 pb-2 overflow-hidden">
         {/*/------------- block 1 -------------/*/}
-        <section className="bg-zinc-900 rounded-md p-6 col-span-3">
+        <section className="bg-zinc-900 rounded-md p-6 w-1/5 min-w-[230px] overflow-y-auto scrollbar-thin">
           <h2 className="font-mono font-bold mb-4">YOUR PLAYLIST</h2>
         </section>
 
         {/*/------------- block 2 -------------/*/}
-        <section className="bg-zinc-900 rounded-md p-6 col-span-9">
+        <section className="bg-zinc-900 rounded-md p-6 flex-1 overflow-y-auto scrollbar-thin">
           <h2 className="font-mono font-bold mb-4">POPULAR TITLE</h2>
-            <div className="grid grid-flow-col auto-cols-[160px] gap-4 overflow-x-auto pb-2">
+            <div className="grid grid-flow-col gap-4 overflow-x-auto pb-6 no-scrollbar">
+              <TitleCard image="/title-img/ComeAsYouAre.jpg" title="Come As You Are" artist="Nirvana" />
+              <TitleCard image="/title-img/Creep.jpg" title="Crepp" artist="Radiohead" />
+              <TitleCard image="/title-img/D4C.jpg" title="Dirty Deeds Done Dirt Cheap" artist="AC/DC" />
+              <TitleCard image="/title-img/LoveTrain.jpg" title="Love Train" artist="The O'Jay" />
+              <TitleCard image="/title-img/Time.jpg" title="Time" artist="Pink Floyd" />
+              <TitleCard image="/title-img/WeFellInLoveInOctober.jpg" title="We Fell In Love In October" artist="Girl in Red" />
             </div>
 
           <h2 className="font-mono font-bold mb-4">POPULAR ARTIST</h2>
-            <div className="grid grid-flow-col auto-cols-[160px] gap-4 overflow-x-auto pb-2">
+            <div className="grid grid-flow-col gap-4 overflow-x-auto pb-6 no-scrollbar">
+              <ArtistCard image="/artist-img/2PAC.jpg" artist="2PAC" />
+              <ArtistCard image="/artist-img/AceOfBase.jpg" artist="Ace of Bases" />
+              <ArtistCard image="/artist-img/Blondie.jpg" artist="Blondie" />
+              <ArtistCard image="/artist-img/BritneySpears.jpg" artist="Britney Spears" />
+              <ArtistCard image="/artist-img/Gorillaz.jpg" artist="Gorillaz" />
+              <ArtistCard image="/artist-img/GunsN'Roses.jpg" artist="Guns N' Roses" />
             </div>
 
           <h2 className="font-mono font-bold mb-4">POPULAR ALBUM</h2>
-            <div className="grid grid-flow-col auto-cols-[160px] gap-4 overflow-x-auto pb-2">
-              <AlbumCard image="/album-img/MyBeautifulDarkTwistedFantasy.jpg" title="My Beautiful Dark Twisted Fantasy" artist="Kanye West" />
-              <AlbumCard image="/album-img/DawnFM.jpg" title="Dawn FM" artist="The Weeknd" />
-              <AlbumCard image="/album-img/PurpleRain.jpg" title="Purple Rain" artist="Prince" />
+            <div className="grid grid-flow-col gap-4 overflow-x-auto pb-6 no-scrollbar">
+              <AlbumCard image="/album-img/AbbeyRoad.jpg" title="Abbey Road" artist="The Beatles" />
+              <AlbumCard image="/album-img/Bad.jpg" title="Bad" artist="Michael Jackson" />
               <AlbumCard image="/album-img/CowboyCarter.jpg" title="COWBOY CARTER" artist="Beyoncé" />
+              <AlbumCard image="/album-img/DawnFM.jpg" title="Dawn FM" artist="The Weeknd" />
+              <AlbumCard image="/album-img/MyBeautifulDarkTwistedFantasy.jpg" title="My Beautiful Dark Twisted Fantasy" artist="Kanye West" />
+              <AlbumCard image="/album-img/PurpleRain.jpg" title="Purple Rain" artist="Prince" />
             </div>
 
           <h2 className="font-mono font-bold mb-4">RECOMMENDED FOR YOU</h2>
-            <div className="grid grid-flow-col auto-cols-[160px] gap-4 overflow-x-auto pb-2">
+            <div className="grid grid-flow-col auto-cols-[220px] gap-4 overflow-x-auto pb-6 no-scrollbar">
             </div>
+        </section>
+
+        {/*/------------- block 3 -------------/*/}
+        <section className="bg-zinc-900 rounded-md p-6 w-1/4 min-w-[230px] overflow-y-auto scrollbar-thin">
+          <h2 className="font-mono font-bold mb-4">BEST SONGS EVER</h2>
         </section>
       </div>
     </main>
