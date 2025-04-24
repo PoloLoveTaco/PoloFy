@@ -31,7 +31,10 @@ export default function Home() {
 
           <h2 className="font-mono font-bold mb-4">POPULAR ALBUM</h2>
             <div className="grid grid-flow-col auto-cols-[160px] gap-4 overflow-x-auto pb-2">
-              <AlbumCard albumId="20r762YmB5HeofjMCiPMLv" accessToken={process.env.SPOTIFY_REFRESH_TOKEN} /> 
+              <AlbumCard image="/album-img/MyBeautifulDarkTwistedFantasy.jpg" title="My Beautiful Dark Twisted Fantasy" artist="Kanye West" />
+              <AlbumCard image="/album-img/DawnFM.jpg" title="Dawn FM" artist="The Weeknd" />
+              <AlbumCard image="/album-img/PurpleRain.jpg" title="Purple Rain" artist="Prince" />
+              <AlbumCard image="/album-img/CowboyCarter.jpg" title="COWBOY CARTER" artist="Beyoncé" />
             </div>
 
           <h2 className="font-mono font-bold mb-4">RECOMMENDED FOR YOU</h2>
