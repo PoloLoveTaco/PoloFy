@@ -31,6 +31,7 @@ export default function Home() {
 
           <h2 className="font-mono font-bold mb-4">POPULAR ALBUM</h2>
             <div className="grid grid-flow-col auto-cols-[160px] gap-4 overflow-x-auto pb-2">
+              <AlbumCard albumId="20r762YmB5HeofjMCiPMLv" accessToken={process.env.SPOTIFY_REFRESH_TOKEN} /> 
             </div>
 
           <h2 className="font-mono font-bold mb-4">RECOMMENDED FOR YOU</h2>
