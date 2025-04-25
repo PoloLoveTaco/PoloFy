@@ -24,7 +24,7 @@ export default function Home() {
         {/*/------------- block 2 -------------/*/}
         <section className="bg-zinc-900 rounded-md p-6 flex-1 overflow-y-auto scrollbar-thin">
           <h2 className="font-mono font-bold mb-4">POPULAR TITLE</h2>
-            <div className="grid grid-flow-col gap-4 overflow-x-auto pb-6">
+            <div className="grid grid-flow-col gap-4 overflow-x-auto pb-6 scrollbar-thin">
               <TitleCard image="/title-img/ComeAsYouAre.jpg" title="Come As You Are" artist="Nirvana" />
               <TitleCard image="/title-img/Creep.jpg" title="Crepp" artist="Radiohead" />
               <TitleCard image="/title-img/D4C.jpg" title="Dirty Deeds Done Dirt Cheap" artist="AC/DC" />
@@ -34,7 +34,7 @@ export default function Home() {
             </div>
 
           <h2 className="font-mono font-bold mb-4">POPULAR ARTIST</h2>
-            <div className="grid grid-flow-col gap-4 overflow-x-auto pb-6">
+            <div className="grid grid-flow-col gap-4 overflow-x-auto pb-6 scrollbar-thin">
               <ArtistCard image="/artist-img/2PAC.jpg" artist="2PAC" />
               <ArtistCard image="/artist-img/AceOfBase.jpg" artist="Ace of Bases" />
               <ArtistCard image="/artist-img/Blondie.jpg" artist="Blondie" />
@@ -44,7 +44,7 @@ export default function Home() {
             </div>
 
           <h2 className="font-mono font-bold mb-4">POPULAR ALBUM</h2>
-            <div className="grid grid-flow-col gap-4 overflow-x-auto pb-6">
+            <div className="grid grid-flow-col gap-4 overflow-x-auto pb-6 scrollbar-thin">
               <AlbumCard image="/album-img/AbbeyRoad.jpg" title="Abbey Road" artist="The Beatles" />
               <AlbumCard image="/album-img/Bad.jpg" title="Bad" artist="Michael Jackson" />
               <AlbumCard image="/album-img/CowboyCarter.jpg" title="COWBOY CARTER" artist="Beyoncé" />
@@ -54,7 +54,7 @@ export default function Home() {
             </div>
 
           <h2 className="font-mono font-bold mb-4">RECOMMENDED FOR YOU</h2>
-            <div className="grid grid-flow-col auto-cols-[220px] gap-4 overflow-x-auto pb-6">
+            <div className="grid grid-flow-col auto-cols-[220px] gap-4 overflow-x-auto pb-6 scrollbar-thin">
             </div>
         </section>
 
