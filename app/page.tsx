@@ -26,8 +26,8 @@ export default function Home() {
         </section>
 
         {/*/------------- block 2 -------------/*/}
-        <section className="bg-zinc-900 rounded-md p-6 flex-1 overflow-y-auto scrollbar-thin">
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 pb-12 bg-neutral-900 p-4">
+        <section className="bg-zinc-900 rounded-md p-6 flex-1 overflow-y-auto scrollbar-thin">  
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 pb-12 bg-neutral-900 p-4">
             <RecentPlaylist image="/track-img/ComeAsYouAre.jpg" title="Come As You Are" />
             <RecentPlaylist image="/track-img/ComeAsYouAre.jpg" title="Come As You Are" />
             <RecentPlaylist image="/track-img/ComeAsYouAre.jpg" title="Come As You Are" />
@@ -36,6 +36,16 @@ export default function Home() {
             <RecentPlaylist image="/track-img/ComeAsYouAre.jpg" title="Come As You Are" />
             <RecentPlaylist image="/track-img/ComeAsYouAre.jpg" title="Come As You Are" />
             <RecentPlaylist image="/track-img/ComeAsYouAre.jpg" title="Come As You Are" />
+          </div>
+
+          <h2 className="font-mono font-bold mb-4">MADE FOR YOU</h2>
+          <div className="grid grid-flow-col gap-4 overflow-x-auto pb-12 scrollbar-thin">
+            <AlbumCard image="/album-img/AbbeyRoad.jpg" title="Abbey Road" artist="The Beatles" />
+            <AlbumCard image="/album-img/Bad.jpg" title="Bad" artist="Michael Jackson" />
+            <AlbumCard image="/album-img/CowboyCarter.jpg" title="COWBOY CARTER" artist="Beyoncé" />
+            <AlbumCard image="/album-img/DawnFM.jpg" title="Dawn FM" artist="The Weeknd" />
+            <AlbumCard image="/album-img/MyBeautifulDarkTwistedFantasy.jpg" title="My Beautiful Dark Twisted Fantasy" artist="Kanye West" />
+            <AlbumCard image="/album-img/PurpleRain.jpg" title="Purple Rain" artist="Prince" />
           </div>
 
           <h2 className="font-mono font-bold mb-4">POPULAR TRACK</h2>
@@ -66,10 +76,6 @@ export default function Home() {
             <AlbumCard image="/album-img/DawnFM.jpg" title="Dawn FM" artist="The Weeknd" />
             <AlbumCard image="/album-img/MyBeautifulDarkTwistedFantasy.jpg" title="My Beautiful Dark Twisted Fantasy" artist="Kanye West" />
             <AlbumCard image="/album-img/PurpleRain.jpg" title="Purple Rain" artist="Prince" />
-          </div>
-
-          <h2 className="font-mono font-bold mb-4">RECOMMENDED FOR YOU</h2>
-          <div className="grid grid-flow-col auto-cols-[220px] gap-4 overflow-x-auto pb-12 scrollbar-thin">
           </div>
         </section>
 
