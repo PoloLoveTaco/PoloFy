@@ -1,10 +1,10 @@
-type TitleCardProps = {
+type TrackCardProps = {
   image: string;
   title: string;
   artist: string;
 };
 
-export default function TitleCard({ image, title, artist }: TitleCardProps) {
+export default function TrackCard({ image, title, artist }: TrackCardProps) {
   return (
     <div className="w-50 bg-zinc-800 p-3 rounded-md hover:bg-zinc-700 transition">
       <img src={image} alt={title} className="rounded mb-2" />
