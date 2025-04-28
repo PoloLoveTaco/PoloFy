@@ -7,6 +7,8 @@ import ArtistCard from "@/components/artist-card";
 
 import ActualPlaying from "@/components/actual-playing";
 
+import ActualPlayingSmall from "@/components/actual-playing-small";
+
 export default function Home() {
   return (
     <main className="flex flex-col h-screen w-full bg-black text-white">
@@ -28,7 +30,7 @@ export default function Home() {
         {/*/------------- block 2 -------------/*/}
         <section className="bg-zinc-900 rounded-md p-6 flex-1 overflow-y-auto scrollbar-thin">  
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 pb-12 bg-neutral-900 p-4">
-            <RecentPlaylist image="/track-img/ComeAsYouAre.jpg" title="Come As You Are" />
+            <RecentPlaylist image="/track-img/DontStartNow.jpg" title="Future Nostalgia" />
             <RecentPlaylist image="/track-img/ComeAsYouAre.jpg" title="Come As You Are" />
             <RecentPlaylist image="/track-img/ComeAsYouAre.jpg" title="Come As You Are" />
             <RecentPlaylist image="/track-img/ComeAsYouAre.jpg" title="Come As You Are" />
@@ -85,6 +87,28 @@ export default function Home() {
           <ActualPlaying image="/track-img/DontStartNow.jpg" title="Don't Start Now" artist="Dua Lipa" />
         </section>
       </div>
+
+      <div className="flex h-15 pb-2">
+        {/*/------------- Music Info -------------/*/}
+        <section className="flex w-1/4 items-center justify-start p-2">
+          <ActualPlayingSmall image="/track-img/DontStartNow.jpg" title="Don't Start Now" artist="Dua Lipa" />
+        </section>
+
+        {/*/------------- Music Status -------------/*/}
+        <section className="hidden md:flex flex-1 items-center justify-center">
+          <div className="h-1 w-170 bg-gray-200 rounded-full mb-4 dark:bg-gray-700">
+            <div className="bg-white h-1 w-90 rounded-full"></div>
+          </div>
+        </section>
+
+        {/*/------------- Settings -------------/*/}
+        <section className="hidden md:flex w-1/4 items-center justify-end p-2">
+          <div className="h-1 w-30 bg-gray-200 rounded-full mb-4 dark:bg-gray-700">
+            <div className="bg-white h-1 w-20 rounded-full"></div>
+          </div>
+        </section>
+      </div>
+
     </main>
   );
 }
