@@ -4,7 +4,7 @@ type ActualPlayingSmallProps = {
     artist: string;
   };
   
-  export default function   ({ image, title, artist }: ActualPlayingSmallProps) {
+  export default function ActualPlayingSmall({ image, title, artist }: ActualPlayingSmallProps) {
     return (
       <div className="flex items-center gap-4 rounded-md hover:bg-zinc-700 transition">
         <img src={image} alt={title} className="w-12 h-12 rounded-md object-cover" />
